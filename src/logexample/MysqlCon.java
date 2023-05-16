@@ -24,7 +24,7 @@ class MysqlCon {
 				System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3));
 			}
 			con.close();
-		} catch (Exception exception) {
+		} catch (final Exception exception) {
 			logger.error("Exception "+exception);
 		}
 	}
